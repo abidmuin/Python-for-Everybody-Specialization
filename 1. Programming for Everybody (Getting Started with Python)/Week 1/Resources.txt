@@ -1,0 +1,5 @@
+free copies of the book in various formats available at - https://www.py4e.com/book
+
+You can download all of the sample Python code from the book as well as licensed course materials from - http://www.py4e.com/materials
+
+All of the book materials are available under a Creative Commons Attribution-NonCommercial 3.0 Unported License. The slides, audio, assignments, auto grader and all course materials other than the book are available from http://www.py4e.com/materials under the more flexible Creative Commons Attribution 3.0 Unported License.
