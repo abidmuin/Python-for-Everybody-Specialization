@@ -39,3 +39,5 @@ while (count):  # * until count > 0
     print('Retrieving: ', current_position)
 
     count -= 1
+
+#! https://codereview.stackexchange.com/questions/211949/pulls-href-tags-using-beautifulsoup-with-python?
