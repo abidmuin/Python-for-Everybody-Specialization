@@ -13,12 +13,29 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-
-url = input('Enter - ')
+url = input('Enter URL: ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
+count = int(input('Enter count: '))
+position = int(input('Enter position: '))
+
+
 # Retrieve all of the anchor tags
 tags = soup('a')
-for tag in tags:
-    print(tag.get('href', None))
+print('Retrieving: ', url)  # ? prints root url
+
+while (count):  # * until count > 0
+    for tag in tags:
+        # ?simply gets the value by index / desired position
+        current_position = tags[position - 1].get('href', None)
+
+    updated_url = str(current_position)
+
+    html = urllib.request.urlopen(updated_url).read()
+    soup = BeautifulSoup(html, "html.parser")
+    tags = soup('a')
+
+    print('Retrieving: ', current_position)
+
+    count -= 1
